@@ -1,0 +1,21 @@
+body {
+  background-color: #ffd991;
+  text-align: center;
+}
+
+.btn-custom-primary {
+  background-color: #ff9b01;
+  color: white;
+}
+
+.custom-primary-text {
+  color: #ffaa05;
+}
+
+.custom-white-text {
+  color: #ffffff;
+}
+
+select {
+  height: auto !important;
+}

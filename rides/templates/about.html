@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="d-flex mt-4">
+  <div class="col-3"></div>
+
+  <div class="col-6">
+    <img
+      src="{% static 'logo-circle.png' %}"
+      alt="Image of logo"
+      height="390"
+      class="rounded-circle"
+    />
+    <div class="m-4 fw-bold h1 custom-primary-text">
+      So, what exactly is HOVRiders?
+    </div>
+
+    <div class="m-5 h4 fw-normal">
+      Every year, millions of people travel to attend events far and wide,
+      leaving their typically modes of transportation at home. To get around
+      these conferences, these attendees often rent cars or pay for taxis such
+      as Ubers and Lyfts individually, wasting money, time, and overall economic
+      efficiency. HOVRiders was built to combat this problem. Going somewhere
+      unfamiliar? Find a friend to travel with and split the costs! Want to
+      connect to similar conference-goers? Enter your travel information and get
+      paired! It's that simple. Whether you're a solo-hiker, big-time CEO, or
+      the average commuter, HOVRiders has a home for you.
+    </div>
+  </div>
+
+  <div class="col-3"></div>
+</div>
+{% endblock %}
