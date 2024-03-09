@@ -1,0 +1,62 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div>
+  <!-- <form action="{% url 'rides:create' %}" method="post">
+        {% csrf_token %}
+        {{ new_ride_form }}
+        <input type="submit" value="Submit">
+      </form> -->
+  <div class="d-flex">
+    <div class="col-2">
+      <div>
+        <a
+          href="https://www.princeton.edu"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="{% static '401ad.png' %}"
+              width="200"
+            />
+            <img src="{% static '401ad.png' %}" width="1" /> </picture
+        ></a>
+      </div>
+    </div>
+
+    <div class="col-6" style="margin-left: auto; margin-right: auto">
+      <!--AI search-->
+      <form
+        id="ai"
+        class="menu-item"
+        method="post"
+        action="{% url 'rides:ai_interaction' %}"
+      >
+        {% csrf_token %}
+        <input type="text" name="user_input" />
+        <button type="submit">Ask HOV-AI!</button>
+      </form>
+      {% if ai_text %}
+      <p>{{ ai_text }}</p>
+      {% endif %}
+    </div>
+
+    <div class="col-2">
+      <div>
+        <a
+          href="http://www.airbnb.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="{% static 'airbnbad.png' %}"
+              width="200"
+            />
+            <img src="{% static 'airbnbad.png' %}" width="1" /> </picture
+        ></a>
+      </div>
+    </div>
+  </div>
+  <br />
+  {% endblock %}
+</div>

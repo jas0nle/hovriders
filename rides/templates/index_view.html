@@ -12,8 +12,14 @@
           href="https://www.princeton.edu"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="{% static '401ad.png' %}" width="200"
-        /></a>
+          ><picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="{% static '401ad.png' %}"
+              width="200"
+            />
+            <img src="{% static '401ad.png' %}" width="1" /> </picture
+        ></a>
       </div>
     </div>
 
@@ -60,8 +66,14 @@
           href="http://www.airbnb.com"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="{% static 'airbnbad.png' %}" width="200"
-        /></a>
+          ><picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="{% static 'airbnbad.png' %}"
+              width="200"
+            />
+            <img src="{% static 'airbnbad.png' %}" width="1" /> </picture
+        ></a>
       </div>
     </div>
   </div>

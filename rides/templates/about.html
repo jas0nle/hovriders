@@ -3,17 +3,19 @@
   <div class="col-3"></div>
 
   <div class="col-6">
-    <img
-      src="{% static 'logo-circle.png' %}"
-      alt="Image of logo"
-      height="390"
-      class="rounded-circle"
-    />
-    <div class="m-4 fw-bold h1 custom-primary-text">
+    <picture>
+      <source
+        media="(min-width: 900px)"
+        srcset="{% static 'logo-circle.png' %}"
+        width="200"
+      />
+      <img src="{% static 'logo-circle.png' %}" width="100" />
+    </picture>
+    <div class="m-4 fw-bold h1 custom-primary-text center">
       So, what exactly is HOVRiders?
     </div>
 
-    <div class="m-5 h4 fw-normal">
+    <div class="m-5 h4 fw-normal center">
       Every year, millions of people travel to attend events far and wide,
       leaving their typically modes of transportation at home. To get around
       these conferences, these attendees often rent cars or pay for taxis such
